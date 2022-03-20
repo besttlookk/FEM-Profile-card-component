@@ -1,0 +1,15 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+
+  &--top {
+    background-image: url("../../images/bg-pattern-top.svg");
+    transform: translate(0%, -40%);
+  }
+
+  &--bottom {
+    background-image: url("../../images/bg-pattern-bottom.svg");
+    transform: translate(50%, 30%);
+  }
+}

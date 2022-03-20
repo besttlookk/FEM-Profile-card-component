@@ -1,0 +1,18 @@
+@use "../utils" as *;
+
+.detail {
+  @include flex($direction: column);
+
+  &__number {
+    font-weight: 700;
+    font-size: rem(20);
+    color: $col-head;
+  }
+
+  &__type {
+    font-size: rem(14);
+    color: $col-para;
+    margin-top: 2px;
+    letter-spacing: 1px;
+  }
+}

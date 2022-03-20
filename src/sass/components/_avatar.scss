@@ -1,0 +1,15 @@
+@use "../utils" as *;
+
+.avatar {
+  width: rem(130);
+  height: rem(130);
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

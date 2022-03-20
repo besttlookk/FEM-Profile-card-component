@@ -1,0 +1,14 @@
+@use "../utils" as *;
+
+h2 {
+  color: $col-head;
+  font-weight: 900;
+  font-size: rem(22);
+  margin-bottom: rem(20);
+}
+
+p {
+  color: $col-para;
+  font-size: rem(15);
+  line-height: 1.5;
+}

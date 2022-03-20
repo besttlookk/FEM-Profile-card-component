@@ -1,0 +1,62 @@
+@use "../utils/" as *;
+
+.card {
+  position: relative;
+  z-index: 50;
+  width: 90vw;
+  max-width: 360px;
+  border-radius: rem(20);
+  background-color: white;
+  overflow: hidden;
+
+  &__hero {
+    height: rem(180);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__main {
+    text-align: center;
+    position: relative;
+    padding-top: rem(85);
+    padding-bottom: rem(26);
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: rem(20);
+    margin-right: 6px;
+    color: $col-head;
+  }
+
+  &__age {
+    font-size: rem(20);
+    color: $col-para;
+  }
+
+  &__place {
+    font-size: rem(16);
+    color: $col-para;
+    margin-top: 4px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // border-top: 0.5px solid $col-para;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
+    padding: rem(24) rem(32);
+  }
+}
